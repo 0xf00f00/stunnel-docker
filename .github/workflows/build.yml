@@ -47,5 +47,5 @@ jobs:
       - 
         name: Test Docker image
         run: |
-          docker run --rm --entrypoint /usr/bin/stunnel ghcr.io/${{ github.actor }}/stunnel:latest --version
-          docker run --rm --entrypoint /usr/bin/stunnel ghcr.io/${{ github.actor }}/stunnel:${{ github.ref_name }} --version
+          docker run --rm --entrypoint /usr/bin/stunnel ghcr.io/${{ github.actor }}/stunnel:latest -version
+          docker run --rm --entrypoint /usr/bin/stunnel ghcr.io/${{ github.actor }}/stunnel:${{ github.ref_name }} -version
